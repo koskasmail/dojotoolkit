@@ -1,0 +1,43 @@
+
+
+----[sample]------------
+
+https://demos.dojotoolkit.org/demos/ 
+
+https://demos.dojotoolkit.org/demos/themePreviewer/demo.html
+https://demos.dojotoolkit.org/demos/clock/demo.html
+
+
+https://www.mobilefish.com/developer/dojo/dojo_quickguide_examples.html
+
+
+https://docs.oracle.com/cd/E15919_01/wlp.1032/e14229/setup.htm
+
+
+/// todo list ///
+  https://medium.com/swlh/learn-dojo-toolkit-part-1-ec099a877c7f
+
+
+// learn
+https://developers.arcgis.com/javascript/3/jshelp/inside_defaults.html
+
+// build
+https://dojo.io/
+
+
+https://dojotoolkit.org/reference-guide/1.8/build/simpleExample.html
+
+///???
+https://project-awesome.org/petk/awesome-dojo
+
+/// document
+https://dojotoolkit.org/documentation/
+
+
+----[youtube]------------
+
+https://youtu.be/JkF7nFwVWjU
+
+
+
+
