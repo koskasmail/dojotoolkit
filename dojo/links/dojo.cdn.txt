@@ -1,0 +1,26 @@
+
+
+----[dojo cdn]------------
+
+
+----[dojo/1.10.4]------------
+https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js
+
+
+----[dojo/1.10.10]------------
+https://ajax.googleapis.com/ajax/libs/dojo/1.10.10/dojo/dojo.js
+
+
+----[dojo/1.9.1]------------
+//ajax.googleapis.com/ajax/libs/dojo/1.9.1/dojo/dojo.js
+<script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.1/dojo/dojo.js"></script>
+
+
+----[dojo cdn]------------
+https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js
+<script src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"
+
+
+----[dojo cdn list ]------------
+https://cdnjs.com/libraries/dojo
+

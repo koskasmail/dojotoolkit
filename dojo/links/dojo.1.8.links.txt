@@ -1,0 +1,67 @@
+
+----[Dojo 1.8 links]--------
+
+///API Documentation:
+http://www.dojotoolkit.org/api/
+
+
+///Tutorials:
+http://dojotoolkit.org/documentation/
+
+
+///Reference Guide:
+http://dojotoolkit.org/reference-guide/
+
+
+///Sitepen Blog:
+http://www.sitepen.com/blog/
+
+
+///Dig Into Dojo Tutorials:
+http://net.tutsplus.com/sessions/dig-into-dojo/
+
+
+///dojo-dom-basics
+https://code.tutsplus.com/tutorials/dig-into-dojo-dom-basics--net-22753
+
+
+///nodelist-modules-and-ajax
+https://code.tutsplus.com/tutorials/dig-into-dojo-nodelist-modules-and-ajax--net-23069
+
+
+///dojotoolkit/1.10/
+https://dojotoolkit.org/reference-guide/1.10/
+
+
+///dojo-dijit
+https://dojotoolkit.org/reference-guide/1.10/dijit/index.html#dijit-index
+
+https://code.tutsplus.com/tutorials/dig-into-dojo-dijit--net-23198
+
+
+///dojo-dojox
+https://dojotoolkit.org/reference-guide/1.10/dojox/index.html#dojox-index
+
+https://code.tutsplus.com/tutorials/dig-into-dojo-dojox--net-23595
+
+
+///util
+https://dojotoolkit.org/reference-guide/1.10/util/index.html#util-index
+
+
+///DojoCheatSheet-1-8
+https://cheatography.com/karim/cheat-sheets/dojo-1-8/pdf/
+
+
+///DojoCheatSheet-1.9
+https://training.sitepen.com/cheatsheets/DojoCheatSheet.html
+
+
+///dig-into-dojo--net-22763
+https://code.tutsplus.com/series/dig-into-dojo--net-22763
+
+
+///dojo - cdn
+<script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.1/dojo/dojo.js"></script>
+
+
