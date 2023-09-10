@@ -32,17 +32,9 @@
 
 ```
 
-### [ output result ]
-
-<body>
-<iframe src="https://koskasmail.github.io/dojotoolkit/" width="800" height="600" frameborder="0"></iframe>
-</body>
 
 -----
 
-### [ Thoughts ]
-
-  1. Thoughts.
 
 
 <p align="right">(<a href="#topage">back to top</a>)</p>
