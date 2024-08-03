@@ -1,10 +1,10 @@
 <a name="topage"></a>
 
-# dojo
-dojo
+# 001_samples
 
-### static web page
-[https://koskasmail.github.io/dojotoolkit/]
+### samples list
+
+* list
 
 
 -----

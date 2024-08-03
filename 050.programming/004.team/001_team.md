@@ -1,11 +1,8 @@
 <a name="topage"></a>
 
-# dojo
-dojo
+# 001_team
 
-### static web page
-[https://koskasmail.github.io/dojotoolkit/]
-
+## team list
 
 -----
 

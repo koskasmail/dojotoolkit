@@ -1,0 +1,27 @@
+Name: 
+DbDocumentType
+
+Project:
+exportAll
+
+Connection Type:
+Standard (Socket Attach)
+
+----[#1]----------------
+Connection Property:
+Host:
+sImgCNDev01
+------------------------
+
+----[#2]----------------
+Connection Property:
+Host:
+gImgCNDev01
+------------------------
+
+Port:
+7777
+
+
+
+

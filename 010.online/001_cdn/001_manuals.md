@@ -1,10 +1,10 @@
 <a name="topage"></a>
 
-# dojo
-dojo
+# 001_cdn
 
-### static web page
-[https://koskasmail.github.io/dojotoolkit/]
+### cdn list
+
+   * ...
 
 
 -----

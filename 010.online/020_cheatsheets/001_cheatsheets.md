@@ -1,10 +1,10 @@
 <a name="topage"></a>
 
-# dojo
-dojo
+# 001_cheatsheets
 
-### static web page
-[https://koskasmail.github.io/dojotoolkit/]
+### manual list
+
+   * 1. to be continue
 
 
 -----

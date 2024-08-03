@@ -1,11 +1,8 @@
 <a name="topage"></a>
 
-# dojo
-dojo
+# 030_manuals
 
-### static web page
-[https://koskasmail.github.io/dojotoolkit/]
-
+### manuals list
 
 -----
 

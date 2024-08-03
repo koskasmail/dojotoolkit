@@ -1,11 +1,10 @@
 <a name="topage"></a>
 
-# dojo
-dojo
+# 001_debug.md
 
-### static web page
-[https://koskasmail.github.io/dojotoolkit/]
+### debug list
 
+* ...
 
 -----
 
