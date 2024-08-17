@@ -27,6 +27,12 @@
 
 ---- 
 
+* TODO
+    * fix path css/html/script
+    * https://koskasmail.github.io/dojotoolkit/050.programming/002.code/html/tree/html/calc.html
+
+---- 
+
 <p align="right">(<a href="#topage">back to top</a>)</p>
 <br/>
 <br/>
