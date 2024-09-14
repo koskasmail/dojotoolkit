@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starry Background</title>
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Create the stars */
+.stars {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(white, rgba(255, 255, 255, 0)) 50% 50%, radial-gradient(white, rgba(255, 255, 255, 0)) 30% 40%, radial-gradient(white, rgba(255, 255, 255, 0)) 70% 70%;
+    background-size: 3px 3px, 3px 3px, 3px 3px;
+    background-repeat: repeat;
+    animation: move-stars 10s linear infinite;
+}
+
+/* Animation for moving stars */
+@keyframes move-stars {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="Test Page"></div>
+</body>
+</html>
