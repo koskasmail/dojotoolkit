@@ -1,0 +1,40 @@
+/* General reset for body */
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+/* Under Construction content styling */
+.content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3em;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #cccccc;
+}
+
+/* Glowing text animation for the title */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #39793b, 0 0 30px #309133, 0 0 40px #1dd123, 0 0 50px #309133, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #246b8f, 0 0 40px #227aa5, 0 0 50px #1d8ac0, 0 0 60px #0e9fe8, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
+    }
+}
