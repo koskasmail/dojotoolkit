@@ -4,12 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cdn</title>
+    <title>id selectors</title>
 </head>
 
 <body>
-    <h1 id="test">Welcome.</h1>
-    <script src="./dojo.js" defer></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
+    
+    <script>
+        dojo.ready(
+            function () {
+                var idTest = dojo.byId("test");
+                console.log("dojo >> output");
+                console.log(idTest.innerHTML);
+            }
+        );
+    </script>
+
+    <h1 id="test">Welcome</h1>
+
+
 </body>
 
 </html>
