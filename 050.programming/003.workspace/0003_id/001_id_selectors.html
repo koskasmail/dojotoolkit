@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id selectors</title>
+</head>
+<body>
+    <script src="./dojo.js"></script>
+    <script>
+        dojo.ready(
+            function () {
+
+                // id read data
+                var idTitle = dojo.byId("title");
+                console.log("dojo >> output");
+                console.log(idTitle.innerHTML);
+
+                // id write data
+                idTitle.innerHTML = "Goodby";
+                console.log(idTitle.innerHTML);
+            }
+        );
+    </script>
+
+    <h1 id="title">Hello</h1>
+</body>
+</html>
