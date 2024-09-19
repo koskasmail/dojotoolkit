@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id selectors</title>
+</head>
+<body>
+    <script src="./dojo.js"></script>
+    <script>
+        dojo.ready(
+            function () {
+
+                // idTitle read data will receive an idTitle
+                var idTitle = dojo.query("#title");
+
+                // get first element in the Array and then inner html
+                console.log(idTitle[0].innerHTML);
+                
+                // idTitle write data - modify first element [0]
+                idTitle[0].innerHTML = "Goodby";
+
+                // get first element in the Array and then inner html
+                console.log(idTitle[0].innerHTML);
+            }
+        );
+    </script>
+
+    <h1 id="title">Hello World</h1>
+</body>
+</html>
