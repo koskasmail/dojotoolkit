@@ -12,13 +12,16 @@
             function () {
 
                 // idTitle read data will receive an idTitle
-                var idTitle = dojo.query("#title");
+                var idTitle = dojo.query("#id_title");
+
+                // get first element in the Array
+                console.log(idTitle);
 
                 // get first element in the Array and then inner html
                 console.log(idTitle[0].innerHTML);
                 
                 // idTitle write data - modify first element [0]
-                idTitle[0].innerHTML = "Goodby";
+                idTitle[0].innerHTML = "No H1 tag";
 
                 // get first element in the Array and then inner html
                 console.log(idTitle[0].innerHTML);
@@ -26,6 +29,6 @@
         );
     </script>
 
-    <h1 id="title">Hello World</h1>
+    <h1 id="id_title">H1 tag</h1>
 </body>
 </html>
