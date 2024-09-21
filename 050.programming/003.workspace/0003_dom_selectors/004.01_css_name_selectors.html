@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>name selectors</title>
+</head>
+<body>
+    <script src="./dojo.js"></script>
+    <script>
+        dojo.ready(
+            function () {
+
+                // get class array
+                console.log(dojo.query("[name='name_title']"));
+
+                // display value
+                console.log(dojo.query("[name='name_title']")[0]);
+
+                // display value
+                console.log(dojo.query("[name='name_title']")[0].innerHTML);
+
+                // set class array
+                dojo.query("[name='name_title']")[0].innerHTML = 'new class';
+
+                // display value
+                console.log(dojo.query("[name='name_title']")[0].innerHTML);
+                
+            }
+        );
+    </script>
+
+    <h2 name="name_title">H2 tag</h2>
+</body>
+</html>
