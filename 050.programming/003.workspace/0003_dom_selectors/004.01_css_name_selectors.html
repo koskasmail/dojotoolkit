@@ -20,12 +20,17 @@
                 // display value
                 console.log(dojo.query("[name='name_title']")[0].innerHTML);
 
-                // set class array
-                dojo.query("[name='name_title']")[0].innerHTML = 'new class';
+                // set tag array
+                dojo.query("div")[0].innerHTML = '<p> test';
 
                 // display value
-                console.log(dojo.query("[name='name_title']")[0].innerHTML);
-                
+                console.log(dojo.query("div")[0].innerHTML);
+
+                // display value <div> & .class
+                console.log(dojo.query("div.name")[0].innerHTML);
+
+                // display value <div> & #id
+                console.log(dojo.query("div#fname")[0].innerHTML);               
             }
         );
     </script>
