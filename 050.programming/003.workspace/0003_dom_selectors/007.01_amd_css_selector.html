@@ -1,29 +1,39 @@
-<!-- (TODO: FIX FIX) -->
-<!-- (TODO: FIX FIX) -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>amd_css_selector</title>
+    <title>AMD</title>
 </head>
 <body>
     <script src="./dojo.js" data-dojo-config="async:true"></script>
     <script>
-        require(["dojo/dom", "dojo/query", "dojo/domReady!"], function(dom, query){
-            var j = query("#title");
-            console.log('j[0].innerHTML ===> ' + j[0].innerHTML);   
 
-            dojo.query("#title")[0].innerHTML = "Amd CSS selector";
-            console.log('dojo.query("#title")[0].innerHTML ===> ' + dojo.query("#title")[0].innerHTML);
-            console.log('j[0].innerHTML ===> ' + j[0].innerHTML);
+        require(["dojo/dom", "dojo/query", "dojo/domReady!"], function(dom, query){
+
+            console.log('----[dom.byId]----');
+
+            var a = dom.byId("title").innerHTML;
+            console.log(dom.byId("title").innerHTML);
+            console.log(' a[0].innerHTML ===> ' +  a);   
+
+            console.log('----[dom.byId]----');   
+            var b = query("#title");
+            console.log(b[0].innerHTML);
+
+            b[0].innerHTML = "New AMD 2";
+            console.log(b[0].innerHTML);
+
+            query("#title")[0].innerHTML = "new AMD #2";
+            console.log(query("#title")[0].innerHTML);
+
+            console.log('----[CSS]----');   
+
         }); 
+
     </script>
 
-    <h1 id="title">This is AMD;</h1>
+    <h1 id="title">AMD</h1>
+    <h2 class="class_title">H2 tag</h2>
 </body>
 </html>
-
-<!-- (TODO: FIX FIX) -->
-<!-- (TODO: FIX FIX) -->
