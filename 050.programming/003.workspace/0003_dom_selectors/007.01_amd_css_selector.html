@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMD</title>
+</head>
+<body>
+    <script src="./dojo.js" data-dojo-config="async:true"></script>
+    <script>
+        require(["dojo/dom", "dojo/query", "dojo/domReady!"], function(dom, query){
+            var j = query("#title");
+            console.log('j[0].innerHTML ===> ' + j[0].innerHTML);   
+
+            dojo.query("#title")[0].innerHTML = "Amd CSS selector";
+            console.log('dojo.query("#title")[0].innerHTML ===> ' + dojo.query("#title")[0].innerHTML);
+            console.log('j[0].innerHTML ===> ' + j[0].innerHTML);
+        }); 
+    </script>
+
+    <h1 id="title">This is AMD;</h1>
+</body>
+</html>
