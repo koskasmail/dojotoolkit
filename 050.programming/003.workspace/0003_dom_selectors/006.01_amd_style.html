@@ -8,11 +8,12 @@
 <body>
     <script src="./dojo.js" data-dojo-config="async:true"></script>
     <script>
-        require(["dojo/dom","dojo/domReady!"],function(){
-            console.log("test");
+        require(["dojo/dom","dojo/domReady!"], function(dom){
+            var i = dom.byId("title");
+            console.log(i.innerHTML);
         }); 
     </script>
 
-    <h1 id="title">AMD</h1>
+    <h1 id="title">data-dojo-config="async:true" .... require(["dojo/dom","dojo/domReady!"], function(dom){});</h1>
 </body>
 </html>
