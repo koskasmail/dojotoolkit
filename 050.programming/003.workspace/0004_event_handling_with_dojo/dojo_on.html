@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+
+    <div id="mouseOver">Move Mouse Over Me, to change background</div>
+    <button id="showDiv">showDiv</button>
+    <button id="hideDiv">hideDiv</button>
+
+    <script src="./dojo.js" data-dojo-config="async:true"></script>
+    <script>
+
+        require(["dojo/dom", "dojo/on", "dojo/domReady!"], function(dom, on){
+
+            var divMouseOver = dom.byId("mouseOver");
+            var hideButton = dom.byId("hideDiv");
+            var showButton = dom.byId("showDiv");
+                        
+            on(divMouseOver, "mouseenter", function(event){
+                divMouseOver.innerHTML="Move Mouse From Here";
+                divMouseOver.style.background="yellow";
+            })
+
+            on(divMouseOver, "mouseleave", function(event){
+                divMouseOver.innerHTML="Move Mouse Over Me, to change background";
+                divMouseOver.style.background="white";
+            })
+
+            on(hideButton, "click", function(event) {
+                divMouseOver.style.display="none";
+            });
+
+            on(showDiv, "click", function(event) {
+                if(divMouseOver.style.display==="none") {
+                   divMouseOver.style.display="block";
+                }
+                else {
+                    console.log("div already showen")
+                }
+            });
+
+        }); 
+
+    </script>
+
+    <h1 id="title">AMD</h1>
+    <h2 class="class_title">H2 tag</h2>
+</body>
+</html>
