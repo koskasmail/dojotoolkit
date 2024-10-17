@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom_style_module</title>
+    <style>
+        .ddsc {
+            width: 300px;
+            height: 150px;
+            border: 1px solid red;
+            background-color: antiquewhite;
+            text-align: right;
+        }
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">dom_style_module - get_computed_style method</h1>
+    <div id="ddsi" class="ddsc">DomStyle </div>
+     <div>
+        <button id="btnInfo">DomStyle Infor</button>
+    </div>
+    <div id="output"></div>
+
+    <script src="./dojo.js" data-dojo-config="async:true"></script>
+    <script>
+        require(["dojo/dom", "dojo/on", "dojo/mouse", "dojo/dom-style", "dojo/domReady!"],
+            function (dom, on, mouse, domstyle) {
+
+                var vddsi = dom.byId("ddsi");
+
+                on(btnInfo, "click", function (event) {
+                    var resultStyle = domstyle.getComputedStyle(vddsi);
+
+                    console.log("* width:: " + resultStyle.width 
+                                + " height:: " + resultStyle.height
+                                + " border:: " + resultStyle.border 
+                                + " background-color:: " + resultStyle.backgroundColor
+                                + " text-align:: " + resultStyle.textAlign);
+
+                    output.innerHTML = "* width:: " + resultStyle.width 
+                                + " height:: " + resultStyle.height
+                                + " border:: " + resultStyle.border 
+                                + " background-color:: " + resultStyle.backgroundColor
+                                + " text-align:: " + resultStyle.textAlign;              
+                });
+            });
+    </script>
+</body>
+</html>
