@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom_style_module</title>
+</head>
+
+<body>
+
+    <h1 id="title">dom_style_module - get/set method</h1>
+
+    <div id="dsm">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+
+    <script src="./dojo.js" data-dojo-config="async:true"></script>
+    <script>
+        require(["dojo/dom", "dojo/on", "dojo/mouse", "dojo/dom-style", "dojo/domReady!"],
+            function (dom, on, mouse, domstyle) {
+
+                var ddsm = dom.byId("dsm");
+
+                on(ddsm, mouse.enter, function (event) {
+                    domstyle.set(ddsm, "width", "250px");
+                    ddsm.innerHTML = "get property with width of ==> " + domstyle.get(ddsm, "width");
+                })
+            });
+    </script>
+</body>
+</html>
