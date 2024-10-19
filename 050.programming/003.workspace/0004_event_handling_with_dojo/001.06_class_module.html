@@ -1,1 +1,74 @@
-HTML continue
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom_class_module</title>
+    <style>
+        .red_text {
+            color: red;
+        }
+
+        .green_text {
+            color: green;
+        }
+
+        div {
+            margin: 10px;
+        }
+
+        .smallText {
+            font-size: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="title">dom class test </h1>
+    <button id="addRed">Add Red color</button>
+    <button id="checkIfRed">check If color</button>
+    <button id="removeRed">remove Red color</button>
+    <button id="toggleGreen">toggle green color</button>
+    <button id="replaceRed">replace Red color</button>
+    <button id="addSmallText">add small text</button>
+    <div id="output"></div>
+
+    <script src="./dojo.js" data-dojo-config="async:true"></script>
+    <script>
+        require(["dojo/dom", "dojo/on", "dojo/dom-class", "dojo/domReady!"],
+            function (dom, on, domClass) {
+
+                // add a class of id - add class
+                on(dom.byId('addRed'), "click", function () {
+                    domClass.add(dom.byId('title'), 'red_text');
+                });
+
+                // remove a class of id  - remove class
+                on(dom.byId('removeRed'), "click", function () {
+                    domClass.remove(dom.byId('title'), 'red_text');
+                });
+
+                // remove a class of id - check if class exist
+                on(dom.byId('checkIfRed'), "click", function () {
+                    output.innerHTML = "It's Red ? ==> " + domClass.contains(dom.byId('title'), 'red_text');
+                });
+
+                // toggle a class of id -- add/remove class
+                on(dom.byId('toggleGreen'), "click", function () {
+                    domClass.toggle(dom.byId('title'), 'green_text');
+                });
+
+                // replace a class of id - replace class
+                on(dom.byId('replaceRed'), "click", function () {
+                    domClass.replace(dom.byId('title'), 'red_text', 'green_text');
+                });
+
+                // add a class of id - add class - change font size.
+                on(dom.byId('addSmallText'), "click", function () {
+                    domClass.add(dom.byId('title'), 'smallText');
+                });
+
+            });
+    </script>
+</body>
+</html>
