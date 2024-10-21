@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DOJO FX - fade </title>
+    </head>
+    <body>
+	<h1> DEMO: DOJO FX - fade </h1>
+	<div id="testNode" style="background:green;width:200px;height:200px;display:block;"> Hello Dojo! </div>
+	<button id="fadeout">Fade Out </button>
+	<button id="fadein">Fade in </button>
+	<h2 id="message"/>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.12.1/dojo/dojo.js" data-dojo-config="async:true"></script>
+	<script>
+	require(["dojo/dom","dojo/on","dojo/_base/fx","dojo/fx/easing","dojo/domReady!"],function(dom,on,fx,easy){
+	
+	var testNode = dom.byId("testNode");
+	var fadeinBtn = dom.byId("fadein");
+	var fadeoutBtn = dom.byId("fadeout");
+	
+	on(fadeoutBtn,"click",function(){
+	
+	var fadeOutAnim = fx.fadeOut({
+	node:testNode,
+	duration:4000,
+	beforeBegin:function(){
+	dom.byId("message").innerHTML="Fading out now...";	
+	}
+	});
+	
+	on(fadeOutAnim,"End",function(){
+	
+	dom.byId("message").innerHTML="Fade out complete."
+	
+	});
+	
+	
+	
+	fadeOutAnim.play();
+	
+	});
+	
+	on(fadeinBtn,"click",function(){
+	
+	var fadeinAnim = fx.fadeIn({node:testNode,duration:5000,easing:easy.bounceIn});
+	
+	fadeinAnim.play();
+	
+	});
+	
+	});
+	
+	</script>
+</body>
+</html>

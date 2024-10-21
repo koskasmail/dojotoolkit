@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DOJO FX - slide </title>
+    </head>
+    <body>
+	<h1> DEMO: DOJO FX - slide </h1>
+	<div id="testNode" style="background:green;width:200px;height:200px;display:block;"> Hello Dojo! </div>
+	<button id="slideout">slide Out </button>
+	<button id="slidein">slide in </button>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.12.1/dojo/dojo.js" data-dojo-config="async:true"></script>
+	<script>
+	require(["dojo/dom","dojo/on","dojo/fx","dojo/_base/fx","dojo/domReady!"],function(dom,on,fx,basefx){
+	
+	var testNode = dom.byId("testNode");
+	var slideinBtn = dom.byId("slidein");
+	var slideoutBtn = dom.byId("slideout");
+	
+	on(slideoutBtn,"click",function(){
+	
+	var slideOutAnim = fx.slideTo({node:testNode,duration:4000,top:200,left:500});
+	slideOutAnim.play();
+	
+	});
+	
+	on(slideinBtn,"click",function(){
+	
+	var slideinAnim = fx.slideTo({node:testNode,duration:3000,top:100,left:10});
+	slideinAnim.play();
+	
+	});
+	
+	});
+	
+	</script>
+</body>
+</html>

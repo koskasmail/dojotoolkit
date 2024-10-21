@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Demo: DOM Functions - Create </title>
+    </head>
+    <body>
+	<h1> DEMO: DOMCONSTRUCT CREATE </h1>
+        <ul id="list">
+            <li id="one">One</li>
+            <li id="two">Two</li>
+            <li id="three">Three</li>
+            <li id="four">Four</li>
+            <li id="five">Five</li>
+        </ul>
+		<button id="addEight">addEightAtTop</button>
+		<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.12.1/dojo/dojo.js" data-dojo-config="async:true"></script>
+		<script>
+		require(["dojo/dom","dojo/dom-construct","dojo/on","dojo/domReady!"],function(dom,domConstruct,on){
+		
+		var five = dom.byId("five");
+		var list = dom.byId("list");
+		var button = dom.byId("addEight");
+		
+		domConstruct.create("li",{id:"seven",innerHTML:"seven"},list,"last");
+		
+		on(button,"click",function(){
+		domConstruct.create("li",{id:"eight",innerHTML:"eight",style:{color:"red"}},list,"first");
+		});
+		
+		});
+		</script>
+		
+    </body>
+</html>

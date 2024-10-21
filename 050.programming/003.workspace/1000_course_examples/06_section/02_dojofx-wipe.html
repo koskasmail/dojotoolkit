@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DOJO FX - wipe </title>
+    </head>
+    <body>
+	<h1> DEMO: DOJO FX - wipe </h1>
+	<div id="testNode" style="background:red;width:200px;display:block;"> Hello Dojo! test1 test2 test3 test4 test5 </div>
+	<button id="wipeout">Wipe Out </button>
+	<button id="wipein">wipe in </button>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.12.1/dojo/dojo.js" data-dojo-config="async:true"></script>
+	<script>
+	require(["dojo/dom","dojo/on","dojo/fx","dojo/fx/easing","dojo/domReady!"],function(dom,on,fx,easy){
+	
+	var testNode = dom.byId("testNode");
+	var wipeinBtn = dom.byId("wipein");
+	var wipeoutBtn = dom.byId("wipeout");
+	
+	on(wipeoutBtn,"click",function(){
+	
+	var wipeOutAnim = fx.wipeOut({node:testNode,duration:4000});
+	
+	wipeOutAnim.play();
+	
+	});
+	
+	on(wipeinBtn,"click",function(){
+	
+	var wipeinAnim = fx.wipeIn({node:testNode,duration:5000,easing:easy.bounceIn});
+	
+	wipeinAnim.play();
+	
+	});
+	
+	});
+	
+	</script>
+</body>
+</html>
