@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on.emit</title>
+    <style>
+        #example {
+            font-size: 100px;
+            /*fontsize*/
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Mouse module</h1>
+    <div id="mouseOver">Move Mouse Over Me, to change background</div>
+    <script src="./dojo.js" data-dojo-config="async:true"></script>
+    <script>
+        require(["dojo/dom", "dojo/on", "dojo/mouse", "dojo/dom-style", "dojo/domReady!"],
+            function (dom, on, mouse, domstyle) {
+
+                var divMouseOver = dom.byId("mouseOver");
+                var hideButton = dom.byId("hideDiv");
+
+                ////----[mouse.enter with evet="fontResize" inside target node "mouseOver"]----
+                on(divMouseOver, mouse.enter, function (event) {
+                    divMouseOver.style.background = "yellow";
+                    on.emit(divMouseOver, "fontResizing", { bubbles: true, cancellable: true });
+                });
+
+                ////----[divMouseOver - called by mouse.enter]----////
+                on(divMouseOver, "fontResizing", function (e) {
+                    domstyle.set(divMouseOver, "font-size", "69px");
+                });
+            }); 
+    </script>
+</body>
+</html>
