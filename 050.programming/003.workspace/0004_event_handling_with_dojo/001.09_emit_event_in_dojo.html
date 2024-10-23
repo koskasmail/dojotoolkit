@@ -20,7 +20,7 @@
                 ////----[divMouseOver.mouse.enter --> executes --> hideButton.click]----
                 on(divMouseOver, mouse.enter, function (event) {
                     on.emit(hideButton, "click", { bubbles: true, cancellable: true });
-                })
+                });
 
                 ////---["hideButton.click]---////
                 on(hideButton, "click", function (event) {
