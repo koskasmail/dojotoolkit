@@ -1,1 +1,38 @@
-continue
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on.once_dojo_event</title>
+</head>
+<body>
+    <button id="hideDiv">hideDiv</button>
+    <h1 id="title">Mouse module</h1>
+    <div id="mouseOver">Move Mouse Over Me, to change background</div>
+    <script src="./dojo.js" data-dojo-config="async:true"></script>
+    <script>
+        require(["dojo/dom", "dojo/on", "dojo/mouse", "dojo/dom-style", "dojo/domReady!"],
+            function (dom, on, mouse, domstyle) {
+
+                var divMouseOver = dom.byId("mouseOver");
+                var hideButton = dom.byId("hideDiv");
+
+                ////----[divMouseOver.mouse.enter --> executes --> hideButton.click]----
+                on(divMouseOver, mouse.enter, function (event) {
+                    on.emit(hideButton, "click", { bubbles: true, cancellable: true });
+                })
+
+                ////---["hideButton.click]---////
+                on(hideButton, "click", function (event) {
+                    divMouseOver.style.display = "none";
+                });
+
+                ////----[mouse.leave]----
+                on(divMouseOver, mouse.leave, function (event) {
+                    divMouseOver.innerHTML = "Move Mouse Over Me, to change background";
+                    divMouseOver.style.background = "white";
+                })
+            }); 
+    </script>
+</body>
+</html>
