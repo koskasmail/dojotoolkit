@@ -8,14 +8,21 @@
 
 * 04_section
    * [events_bubbling/cancelation_etc](https://www.w3.org/TR/DOM-Level-2-Events/events.html)
+   * ["dojo/on"](https://dojotoolkit.org/reference-guide/1.10/dojo/on.html)
 
+  
 * 06_section
    * [dojofx-animationEvents.](https://dojotoolkit.org/reference-guide/1.8/dojo/fx/easing.html)
+
 
 ##### w3c
 * [w3c](https://www.w3.org/)
 * [w3c_standards](https://www.w3.org/standards/)
 
+##### "dojo/on"
+* ["dojo/on"](https://dojotoolkit.org/reference-guide/1.10/dojo/on.html)
+
+  
 -----
 
 ##### unsorted
