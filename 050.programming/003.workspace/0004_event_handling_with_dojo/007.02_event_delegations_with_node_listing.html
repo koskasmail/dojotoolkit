@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node listing</title>
+</head>
+<body>
+    <h1 id="title">eventdelegations</h1>
+    <div id="divBtn">
+        <button id="btn1" name="nclick1" class="cclick">click_#1</button>
+        <button id="btn2" name="nclick2" class="cclick">click_#2</button>
+        <button id="btn3" name="nclick3" class="cclick">click_#3</button>
+    </div>
+    <script src="./dojo.js" data-dojo-config="async:true"></script>
+    <script>
+        require(["dojo/dom", "dojo/query", "dojo/on", "dojo/domReady!"], function (dom, query, on) {
+
+            var vdivBtn = dom.byId("divBtn");
+            on(vdivBtn, ".cclick:click", function (event) {
+                console.log("You have pressed the button ::: " + event.target.id);
+            })
+        });
+    </script>
+</body>
+</html>
