@@ -32,9 +32,9 @@
 * [005.02_on.once_dojo_event_handler.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/005.02_on.once_dojo_event_handler.html)
 * [006.01_emit_event_in_dojo.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/006.01_emit_event_in_dojo.html)
 * [006.02_emit_event_on.emit.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/006.02_emit_event_on.emit.html)
-* [007.01_event_delegations_with_class.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/007.01_event_delegations_with_class.html)
-* [007.02_event_delegations_with_name.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/007.02_event_delegations_with_name.html)
-* [007.03_event_delegations_with_node_listing.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/007.03_event_delegations_with_node_listing.html)
+* [008.01_event_delegations_with_class.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/008.01_event_delegations_with_class.html)
+* [008.02_event_delegations_with_name.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/008.02_event_delegations_with_name.html)
+* [008.03_event_delegations_with_node_listing.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/008.03_event_delegations_with_node_listing.html)
 
 -----
 
