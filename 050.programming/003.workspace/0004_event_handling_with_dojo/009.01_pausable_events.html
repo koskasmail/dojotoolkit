@@ -1,1 +1,40 @@
-continue
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node listing</title>
+</head>
+<body>
+    <h1 id="title">pausable events</h1>
+    <div id="divBtn">
+        <button id="enable">enable</button>
+        <button id="disable">disable</button>
+        <button id="click">click</button>
+    </div>
+    <script src="https://koskasmail.github.io/dojotoolkit/999_assets/dojo/1.17.3/dojo/dojo.js" data-dojo-config="async:true"></script>
+    <script>
+        require(["dojo/dom", "dojo/on", "dojo/domReady!"], function (dom, on) {
+
+            var venable = dom.byId("enable");
+            var vdisable = dom.byId("disable");
+            var vclick = dom.byId("click");
+
+            // Target button
+            var buttonTarget = on.pausable(vclick, "click", function (event) {
+               console.log("button is clickable")
+            });
+
+            // pause Target button
+           on (vdisable, "click", function(e) {
+            buttonTarget.pause();
+           });
+
+           // resume Target button
+           on (venable, "click", function(e) {
+            buttonTarget.resume();
+           })
+        });
+    </script>
+</body>
+</html>
