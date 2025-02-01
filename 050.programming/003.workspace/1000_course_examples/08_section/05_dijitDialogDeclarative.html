@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.12.1/dojo/dojo.js" data-dojo-config="async:false,parseOnLoad:true"></script>
+</head>
+
+<body class="claro">	
+
+<h1> Dijit/dialog declarative demo <h1>
+
+<div data-dojo-type="dijit/Dialog" data-dojo-id="testDialog" title="My first dijit dialog">
+
+<span>UserName: <input type="text" id="userId"></span> 
+
+<span>Password: <input type="password" id="password"></span>
+
+<button id="hideDialog" onclick="testDialog.hide();">hide dialog </button>
+
+</div>
+
+<button onclick="testDialog.show();">Show dialog </button>
+
+<script>
+require(["dijit/Dialog","dojo/domReady!"]);
+</script>
+
+</body>
+
+
+</html>

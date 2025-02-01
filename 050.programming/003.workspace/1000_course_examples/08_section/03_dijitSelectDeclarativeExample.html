@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Demo: Dijit select box</title>
+</head>
+
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
+
+<body class="claro">
+<h1> DEMO : DIJIT SELECT BOX</h1>
+
+<select name="basic" id="basicSelect" data-dojo-type="dijit/form/Select">
+<option value="1">One</option>
+<option value="2">Two</option>
+<option value="3">Three</option>
+<option value="4">Four</option>
+<option value="5">Five</option>
+</select>
+
+<button onClick="alert(dijit.byId('basicSelect').get('value'));">value</button>
+<button onClick="alert(dijit.byId('basicSelect').get('displayedValue'));">Displayedvalue</button>
+
+<br />
+
+<select name="basic" id="multiSelect" data-dojo-type="dijit/form/MultiSelect">
+<option value="1">One</option>
+<option value="2">Two</option>
+<option value="3">Three</option>
+<option value="4">Four</option>
+<option value="5">Five</option>
+</select>
+
+<button onClick="alert(dijit.byId('multiSelect').get('value'));">value</button>
+
+<br />
+
+<select name="basic" id="comboBox" data-dojo-type="dijit/form/ComboBox">
+<option value="1">One</option>
+<option value="2">Two</option>
+<option value="3">Three</option>
+<option value="4">Four</option>
+<option value="5">Five</option>
+</select>
+
+<button onClick="alert(dijit.byId('comboBox').get('value'));">value</button>
+
+<br />
+
+<select name="basic" id="filterSelect" data-dojo-type="dijit/form/FilteringSelect">
+<option value="1">One</option>
+<option value="2">Two</option>
+<option value="3">Three</option>
+<option value="4">Four</option>
+<option value="5">Five</option>
+</select>
+
+<button onClick="alert(dijit.byId('filterSelect').get('value'));">value</button>
+<button onClick="alert(dijit.byId('filterSelect').get('displayedValue'));">Displayedvalue</button>
+
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.12.1/dojo/dojo.js" data-dojo-config="async:false,parseOnLoad:true"></script>
+
+<script>
+require(["dojo/parser","dijit/form/Select","dijit/form/MultiSelect","dijit/form/ComboBox","dijit/form/FilteringSelect","dojo/domReady!"]);
+</script>
+
+</body>
+</html>

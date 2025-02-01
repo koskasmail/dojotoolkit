@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.12.1/dojo/dojo.js" data-dojo-config="async:false,parseOnLoad:true"></script>
+</head>
+
+<body class="claro">
+
+<h1> Dijit confirm dialog programmatic Demo </h1>
+
+<button id="test">show dialog </button>	
+
+<script>
+
+require(["dijit/ConfirmDialog","dojo/dom","dojo/on","dojo/domReady!"],function(confDialog,dom,on){
+
+var confDialogWidget = new confDialog({
+
+id:"testDialog",
+content:"<span>This is test content </span>",
+title:"Dijit confirm dialog programmatic",
+style:"width:400px"
+});
+
+confDialogWidget.set('buttonOk','submit');
+confDialogWidget.set('buttonCancel','reset');
+
+confDialogWidget.on("execute",function(){
+
+alert('ok button was clicked');
+
+});
+
+
+confDialogWidget.on("cancel",function(){
+
+alert('cancel button was clicked');
+
+});
+
+on(dom.byId('test'),"click",function(){
+
+confDialogWidget.show();
+
+});
+
+});
+
+
+</script>
+
+</body>
+
+</html>

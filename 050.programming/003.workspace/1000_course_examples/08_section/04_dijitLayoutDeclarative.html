@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Demo: Dijit Layout widgets </title>
+	<style>
+	html,body{
+	width:100%;
+	height:100%;
+	}
+	</style>
+	</head>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
+
+<body class="claro">
+
+<h1> DEMO : DIJIT Layout widgets</h1>
+
+<div id="bordercontainer" data-dojo-type="dijit/layout/BorderContainer" style="width:100%;height:100%">
+<div id="pane1" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'">
+TOP PANE
+</div>
+<div id="pane2" data-dojo-type="dijit/layout/AccordionContainer" style="width:25%;" data-dojo-props="region:'left'">
+<div id="Accpane1" data-dojo-type="dijit/layout/AccordionPane" data-dojo-props="title:'Accpane1'">
+test acc pane1
+</div>
+
+<div id="Accpane2" data-dojo-type="dijit/layout/AccordionPane" data-dojo-props="title:'Accpane2'">
+test acc pane1
+</div>
+
+<div id="Accpane3" data-dojo-type="dijit/layout/AccordionPane" data-dojo-props="title:'Accpane3'">
+test acc pane1
+</div>
+
+<div id="Accpane4" data-dojo-type="dijit/layout/AccordionPane" data-dojo-props="title:'Accpane4'">
+test acc pane1
+</div>
+</div>
+
+<div id="pane3" data-dojo-type="dijit/layout/TabContainer" style="width:25%" data-dojo-props="region:'center'">
+
+<div id="tabpane1" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'tab1'">
+Tab 1 content here..
+</div>
+<div id="tabpane2" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'tab2'">
+Tab 2 content here..
+</div>
+<div id="tabpane3" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'tab3'">
+Tab 3 content here..
+</div>
+
+</div>
+<div id="pane4" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'right'">
+<div id="tpane1" data-dojo-type="dijit/TitlePane" data-dojo-props="title:'title1'">
+title pane 1 content here..
+</div>
+<div id="tpane2" data-dojo-type="dijit/TitlePane" data-dojo-props="title:'title2'">
+second title pane content here...
+</div>
+<div id="tpane3" data-dojo-type="dijit/TitlePane" data-dojo-props="title:'title3'">
+Third title pane content here..
+</div>
+
+</div>
+<div id="pane5" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'bottom'">
+BOTTOM PANE
+</div>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.12.1/dojo/dojo.js" data-dojo-config="async:false,parseOnLoad:true"></script>
+
+<script>
+require(["dojo/parser","dijit/layout/BorderContainer","dijit/layout/ContentPane","dijit/layout/AccordionContainer","dijit/layout/AccordionPane","dijit/layout/TabContainer", "dijit/TitlePane","dojo/domReady!"]);
+</script>
+
+</body>
+</html>

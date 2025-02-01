@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Demo: Dijit text box</title>
+	</head>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
+
+<body class="claro">
+<h1> DEMO : DIJIT TEXT BOX</h1>
+
+<div>
+<label for="textBX"> Name: </label>
+<input id="textBX" data-dojo-type="dijit/form/TextBox" data-dojo-props="placeHolder:'Enter a value'"/>
+</div>
+
+<div>
+<label for="textArea"> Details: </label>
+<textarea id="textArea" data-dojo-type="dijit/form/SimpleTextarea" data-dojo-props="cols:50,rows:7,onFocus:function(){console.log('simple text area focused');}, 
+onBlur:function(){console.log('simple text area blurred');}"> Sample text here... </textarea>
+</div>
+
+<label for="textArea1"> MoreDetails: </label>
+<textarea id="textArea1" data-dojo-type="dijit/form/Textarea" data-dojo-props="cols:50,onFocus:function(){console.log('text area focused');}, 
+onBlur:function(){console.log('text area blurred');}"> Sample text here... </textarea>
+</div>
+
+<div>
+<label for="NtextBX"> Width: </label>
+<input id="NtextBX" value="40" data-dojo-type="dijit/form/NumberTextBox" data-dojo-props="required:true, invalidMessage:'Numbers only!'"/>
+</div>
+
+<div>
+<label for="CtextBX"> Price: </label>
+<input id="CtextBX" value="40" data-dojo-type="dijit/form/CurrencyTextBox" data-dojo-props="currency:'USD',required:true, invalidMessage:'Money only!'"/>
+</div>
+
+<label for="NStextBX"> Number Spinner: </label>
+<input id="NStextBX" data-dojo-type="dijit/form/NumberSpinner" value="10" data-dojo-props="constraints:{min:10,max:1000,places:2},smallDelta:5,placeHolder:'Enter a value'"/>
+</div>
+
+<div>
+<label for="VtextBX"> Validation box: </label>
+<input id="VtextBX" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-props="regExp:'[\\w]+', placeHolder:'Enter a value'"/>
+</div>
+
+<!-- www.w3schools.com Javascript regular expressions -->
+
+<div>
+<label for="DtextBX"> Date: </label>
+<input id="DtextBX" data-dojo-type="dijit/form/DateTextBox" value="2017-01-01" data-dojo-props=""/>
+</div>
+
+<div>
+<label for="TtextBX"> Time: </label>
+<input id="TtextBX" data-dojo-type="dijit/form/TimeTextBox" value="T01:02:03" data-dojo-props=""/>
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.12.1/dojo/dojo.js" data-dojo-config="async:false,parseOnLoad:true"></script>
+
+<script>
+require(["dojo/parser","dijit/form/TextBox","dijit/form/SimpleTextarea","dijit/form/Textarea","dijit/form/NumberTextBox","dijit/form/CurrencyTextBox","dijit/form/NumberSpinner","dijit/form/ValidationTextBox","dijit/form/DateTextBox","dijit/form/TimeTextBox","dojo/domReady!"]);
+</script>
+
+</body>
+</html>

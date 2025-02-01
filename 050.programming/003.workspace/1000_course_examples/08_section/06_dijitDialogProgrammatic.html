@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.12.1/dojo/dojo.js" data-dojo-config="async:false,parseOnLoad:true"></script>
+</head>
+
+<body class="claro">	
+
+<h1> Programmatic syntax demo for dijit/Dialog </h1>
+
+<button id="showDialog">Show</button>
+
+<script>
+
+require(["dijit/Dialog","dojo/dom","dojo/on","dojo/domReady!"],function(dialog,dom,on){
+
+var progDialog = new dialog({
+id:"testDialog",
+title:"my first programmatic dialog",
+content:"<span> Click accept to accept the terms and conditions <button id='accept'>accept</button></span>",
+style:"width:400px;"
+});
+
+on(dom.byId('showDialog'),"click",function(){
+
+progDialog.show();
+
+});
+
+on(dom.byId('accept'),"click",function(){
+
+progDialog.set("title","thank you.");
+progDialog.set("content","terms and conditions have been accepted.");
+});
+
+});
+
+</script>
+
+</body>
+</html>
