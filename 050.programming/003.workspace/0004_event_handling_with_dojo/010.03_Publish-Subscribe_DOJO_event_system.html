@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish-Subscribe</title>
+</head>
+<body>
+    <h2>2 subscribe 1 button 2/3 parameters</h2>
+    <button id="one">Click</button>
+    <div id="two"></div>
+<script src="https://koskasmail.github.io/dojotoolkit/999_assets/dojo/1.17.3/dojo/dojo.js" data-dojo-config="async:true"></script>
+<script>
+require(["dojo/dom", "dojo/on", "dojo/topic", "dojo/domReady!"], function (dom, on, topic) {
+
+    var btnOne = dom.byId("one");
+    var outputTwo = dom.byId("two");
+
+    topic.subscribe("test/topic",function(a,b) {
+        console.log(a +" "+ b);
+    });
+
+    topic.subscribe("test/topic",function(b,c,d) {
+        outputTwo.innerHTML = "Two is subscribe/publish ==> bcd ==> " + b +" " + c + " " + d ;
+        console.log("bcd ==> " + b +" " + c + " " + d);
+    });
+
+    on(btnOne, "click", function() {
+        topic.publish("test/topic","b_test_publish","c_test_publish","d_test_publish");
+    });
+
+});
+</script>
+</body>
+</html>
