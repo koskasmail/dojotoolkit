@@ -39,6 +39,9 @@
 * [010.01_Publish-Subscribe_DOJO_event_system.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/010.01_Publish-Subscribe_DOJO_event_system.html)
 * [010.02_Publish-Subscribe_DOJO_event_system.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/010.02_Publish-Subscribe_DOJO_event_system.html)
 * [010.03_Publish-Subscribe_DOJO_event_system.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/010.03_Publish-Subscribe_DOJO_event_system.html)
+* [010.04_Publish-Subscribe_DOJO_event_system.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/010.04_Publish-Subscribe_DOJO_event_system.html)
+
+
 -----
 
 #### dojo path
