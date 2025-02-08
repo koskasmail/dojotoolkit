@@ -23,7 +23,7 @@ require(["dojo/dom", "dojo/on", "dojo/topic", "dojo/domReady!"], function (dom, 
 
     topic.subscribe("test/topic",function(b) {
         outputTwo.innerHTML = "Two is subscribe/publish ==> b.link1 ==> " + b.link1 ;
-        console.log(" b.link1 ==> " + b.link1);
+        console.log(" b.link3 ==> " + b.link3);
     });
 
     on(btnOne, "click", function() {
