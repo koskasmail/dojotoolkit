@@ -1,1 +1,27 @@
-sample
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish-Subscribe</title>
+</head>
+<body>
+    <h1>Click Button</h1>
+    <button id="one">Click</button>
+<script src="https://koskasmail.github.io/dojotoolkit/999_assets/dojo/1.17.3/dojo/dojo.js" data-dojo-config="async:true"></script>
+<script>
+require(["dojo/dom", "dojo/on", "dojo/topic", "dojo/domReady!"], function (dom, on, topic) {
+
+    var btnOne = dom.byId("one");
+
+    topic.subscribe("test/topic",function(a) {
+        console.log(a);
+    });
+
+    on(btnOne, "click", function() {
+        topic.publish("test/topic","test_publish");
+    });
+});
+</script>
+</body>
+</html>
