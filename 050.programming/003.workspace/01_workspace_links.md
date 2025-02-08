@@ -37,6 +37,8 @@
 * [008.03_event_delegations_with_node_listing.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/008.03_event_delegations_with_node_listing.html)
 * [009.01_pausable_events.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/009.01_pausable_events.html)
 * [010.01_Publish-Subscribe_DOJO_event_system.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/010.01_Publish-Subscribe_DOJO_event_system.html)
+* [010.02_Publish-Subscribe_DOJO_event_system.html](https://koskasmail.github.io/dojotoolkit/050.programming/003.workspace/0004_event_handling_with_dojo/010.02_Publish-Subscribe_DOJO_event_system.html)
+
 -----
 
 #### dojo path
