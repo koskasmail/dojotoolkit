@@ -29,7 +29,7 @@
 
 * TODO
     * fix path css/html/script
-    * https://koskasmail.github.io/dojotoolkit/050.programming/002.code/html/tree/html/calc.html
+    * https://koskasmail.github.io/dojotoolkit/050.programming/002.code/html/tree/html/calc.html 
 
 ---- 
 
