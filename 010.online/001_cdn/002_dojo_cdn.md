@@ -11,7 +11,7 @@ https://koskasmail.github.io/dojotoolkit/999_assets/dojo/1.17.3/dojo/dojo.js
 
 ###### internet
 ```
-"//ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"
+https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js
 ```
 
 -----
