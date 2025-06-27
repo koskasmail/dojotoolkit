@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dojo UI Example</title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dijit/themes/claro/claro.css">
+  <script>dojoConfig = { async: true, parseOnLoad: true }</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
+  <style>
+    #chartNode, #calendarNode, #colorPaletteNode {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body class="claro">
+  <div data-dojo-type="dijit/Dialog" data-dojo-props="title:'Demo Dialog'" id="dialog">
+    <p>This is a Dijit dialog.</p>
+    <div id="calendarNode" data-dojo-type="dijit/Calendar"></div>
+    <div id="colorPaletteNode" data-dojo-type="dijit/ColorPalette"></div>
+    <button data-dojo-type="dijit/form/Button" data-dojo-props="onClick:function(){ alert('Loading...'); }">Wait Button</button>
+  </div>
+
+  <div id="tooltipTarget" style="padding: 10px; background: #eee;" title="Hover for tooltip">
+    Hover over me
+  </div>
+  <div data-dojo-type="dijit/Tooltip" data-dojo-props="connectId:['tooltipTarget']">
+    This is a tooltip!
+  </div>
+
+  <div id="contentPane" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title:'Main Content'" style="width: 100%; height: 200px;">
+    <p>This is a content pane.</p>
+  </div>
+
+  <div id="chartNode" style="width: 400px; height: 300px;"></div>
+
+  <script>
+    require([
+      "dojo/parser", "dijit/Dialog", "dijit/Calendar", "dijit/ColorPalette",
+      "dijit/Tooltip", "dijit/form/Button", "dijit/layout/ContentPane",
+      "dojox/charting/Chart", "dojox/charting/plot2d/Lines", "dojox/charting/axis2d/Default",
+      "dojo/domReady!"
+    ], function(parser, Dialog, Calendar, ColorPalette, Tooltip, Button, ContentPane, Chart, Lines, Default) {
+      parser.parse();
+
+      var chart = new Chart("chartNode");
+      chart.addPlot("default", { type: Lines });
+      chart.addAxis("x", { title: "X Axis" });
+      chart.addAxis("y", { vertical: true, title: "Y Axis" });
+      chart.addSeries("Series A", [1, 2, 3, 4, 5]);
+      chart.render();
+    });
+  </script>
+</body>
+</html>
