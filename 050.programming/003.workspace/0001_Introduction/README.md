@@ -1,6 +1,6 @@
 <a name="topage"></a>
 
-# 🔌 0001_getting_started
+# 🔌 0001_Introduction
 
 ## 📜 subject
 * **001_dojo_cdn.html** - dojo cdn - load cdn
